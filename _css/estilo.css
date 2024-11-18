@@ -1,0 +1,246 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
+@font-face {
+	font-family: 'FonteLogo';
+	src: url(../_fonts/bubblegum-sans-regular.otf);
+}
+
+body {
+	color: rgba(0,0,0,1);
+	background-color: #b9b9b9;
+	font-family: Arial, Helvetica, sans-serif;
+}
+/**/
+p {
+	text-align: justify;
+	text-indent: 50px;
+}
+/**/
+a {
+	color: #606060;
+	text-decoration: none;
+
+}
+a:hover {
+	color: black;
+	text-decoration: underline;
+}
+/**/
+/*Formatacao Interface*/
+div#interface{
+	width: 950px;
+	background-color: white;
+	margin: -20px auto 10px auto;
+	box-shadow: 0px 0px 10px black;
+	padding: 10px 10px 10px 10px;
+}
+header#cabecalho img#icone{
+	position: relative;
+	left: 750px;
+	top: -70px;
+}
+header#cabecalho{
+	border-bottom: 1px #606060 solid;
+	height: 150px;
+	background: url("../_imagens/glass-logo-peq.jpg") no-repeat 0px 95px;
+}	
+header#cabecalho h1{
+	font-family: "Titillium Web", sans-serif;
+	font-size: 30pt;
+	color: #606060;
+	text-shadow: 1px 1px 1px rgba(0, 0, 0, .6);
+	padding: 0px;
+	margin-bottom: 0px;
+}
+header#cabecalho h2{
+	font-family: "Titillium Web", sans-serif;
+	font-size: 15pt;
+	color: #888888;
+	padding: 0spx;
+	margin-top: 0px;
+
+}
+/**/
+/*Formatacao imagem 1 */
+figure.foto-legenda {
+	position: relative;
+	border: 8px solid white;
+	box-shadow: 1px 1px 4px rgba(29, 29, 29, 0.5);
+}
+figure.foto-legenda img{
+	width: 100%;
+	height: 100%;
+}
+figure.foto-legenda figcaption{
+	opacity: 0%;
+	color: white;
+	background-color: rgba(0, 0, 0, .4);
+	position: absolute;
+	top: 0px; 
+	width: 100%;
+	height: 100%;
+	padding: 10px;
+	box-sizing: border-box;
+	transition: opacity 0.5s;
+}
+figure.foto-legenda:hover figcaption{
+	opacity: 1;
+}
+/**/
+/*Formatacao do menu*/
+nav#menu {
+	display: block;
+}
+nav#menu ul{
+	list-style: none;
+	text-transform: uppercase;
+	position: absolute;
+	top: -20px;
+	left: 780px;
+}
+nav#menu li {
+	display: inline-block; 
+	background-color: #dddddd;
+	padding: 10px;
+	margin: 2px;
+	transition: 0.3s;
+}
+nav#menu li:hover{
+	background-color: #606060;
+}
+nav#menu h1 {
+	display: none;
+}
+nav#menu li a{
+	color: black;
+	text-decoration: none;
+}
+nav#menu li a:hover{
+	color: white;
+}
+/**/
+article#np h2 {
+	background-color: #cecece;
+	color: #606060;
+	padding: 5px 0px 5px 10px;
+	margin: 20px 0px 10px 0px;
+	font-size: 20px;
+
+}
+article#np h1{
+	font-family: 'FonteLogo', sans-serif;
+	font-size: 27px;
+	color: #606060;
+	margin-bottom: 0px;
+	margin: 0px 0px 0px;
+	font-weight: 100;
+}
+/**/
+.data{
+	text-align: right;
+	font-size: 10px;
+	font-style: italic;
+	font-weight: 100;
+}
+/**/
+.tec{
+	color: #cecece;
+	font-size: 13pt;
+}
+/**/
+header#gust h2{
+	background-color: white;
+	color: #cecece;
+	font-size: 13pt;
+	margin: 10px 0px 0px -10px;
+	margin-top: -5px;
+}
+/**/
+section#corpo {
+	display: block;
+	width: 500px;
+	float: left;
+	border-right: 1px #606060 solid;
+	padding-right: 15px;
+}
+/**/
+table#espec{
+	border: 1px #606060 solid;
+	border-spacing: 0px;
+	margin-left: auto;
+	margin-right: auto;
+}
+table#espec td{
+	border: 1px #606060 solid;
+	padding: 10px;
+	text-align: center;
+	vertical-align: middle;
+}
+table#espec td.ce{
+	background-color: #606060;
+	color: white;
+	vertical-align: top;
+	font-weight: bold;
+}
+table#espec td.cd{
+	background-color: #cecece;
+}
+table#espec caption{
+	color: #888888;
+	font-size: 22px;
+	font-weight: bolder;
+}
+table#espec span{
+	display: block;
+	float: right;
+	color: black;
+	font-size: 10px;
+	margin-top: 12px;
+}
+/**/
+aside#lateral {
+	background-color: #cecece;
+	box-shadow: 2px 2px 2px rgba(0, 0, 0, .5);
+	display: block;
+	width: 400px;
+	float: right;
+	margin-top: 10px;
+}
+.noticias{
+	font-family: 'FonteLogo';
+	color: #606060;
+	font-size: 27px;
+	font-weight: 100;
+}
+.video{
+	background-color: #606060;
+	color: white;
+	font-size: 19px;
+	padding: 10px;
+	margin: 0px 10px 0px 10px;
+}
+.novidades{
+	background-color: #606060;
+	color: white;
+	font-size: 19px;
+	padding: 10px;
+	margin: 0px 10px 0px 10px;
+}
+/**/
+footer#rodape {
+	clear: both;
+	border-top: 1px #606060 solid;
+}
+footer#rodape p{
+	text-align: center;
+}
+footer#rodape a{
+	text-decoration: none;
+	color: #606060;
+	transition: 0.1s;
+}
+footer#rodape a:hover{
+	color: black;
+	text-decoration: underline; 
+}
+/**/
